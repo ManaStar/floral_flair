@@ -153,10 +153,4 @@ public class ThornBlossomBlock extends BushBlock implements BonemealableBlock {
     public void performBonemeal(@NotNull ServerLevel level, @NotNull RandomSource random, @NotNull BlockPos pos, @NotNull BlockState state) {
         popResource(level, pos, new ItemStack(this));
     }
-
-    @Override
-    public PlantType getPlantType(BlockGetter level, BlockPos pos) {
-        return null;
-    }
-
 }
